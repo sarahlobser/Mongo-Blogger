@@ -1,0 +1,14 @@
+{author:"Sarah Lobser",
+ comments:[{author:"Rick James", body:"Comment 1", date:""}],
+ tags:[{body:"first"}, {body:"post"}],
+ title:"Post Title 1",
+ body:"First Blog Post",
+ date:""
+}
+{author:"Sarah Lobser",
+ comments:[{author:"Rick James", body:"Comment 2", date:""}],
+ tags:[{body:"second"}, {body:"post"}],
+ title:"Post Title 2",
+ body:"Second Blog Post",
+ date:""
+}

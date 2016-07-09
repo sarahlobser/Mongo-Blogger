@@ -1,0 +1,18 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Mongo Blog Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sarah Lobser",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "mongo": "^0.1.0",
+    "mongodb": "^2.1.18"
+  }
+}

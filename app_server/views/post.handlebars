@@ -1,0 +1,33 @@
+<div class="message">
+    <p>{{message}}</p>
+</div>
+<div>
+    <div class="post_stub">
+    <h2>{{post.title}}</h2>
+    <h3>{{post.author}}</h3>
+    <h3>{{post.date}}</h3>
+    <p>{{post.body}}</p>
+    {{#each post.tags}}
+        <a href="/search/{{this.body}}"><span class="tag">{{this.body}}</span></a>
+    {{/each}}
+    
+    
+    <div class="post_comments">
+    <div id="comment_form">
+    <form action="/comments/{{post._id}}" method="POST">
+        <textarea name="body" cols="100" rows="5" placeholder="Post a Comment" required></textarea>
+        <input type="text" name="author" placeholder="Anonymous">
+        <input type="submit" value="Post Comment">
+    </form>
+    </div>
+        
+    {{#each post.comments}}
+        <div class="comment">
+            <p>{{this.body}}</p>
+            <p>Posted by:{{this.author}}, on: {{this.date}}</p>
+            <p><a href="/removeComment/{{@root.post._id}}/{{this.body}}">Remove This Comment</a></p>
+        </div>
+    {{/each}}
+    </div>
+    </div>
+</div>
